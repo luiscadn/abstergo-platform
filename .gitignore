@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+
+# Archivos de entorno (contraseñas y credenciales)
+.env
+.env.local
+*.env
+
+# Archivos generados de compilación
+dist/
+.next/
+out/
+build/
+
+# Archivos del sistema y editores
+.DS_Store
+.vscode/
+.idea/
