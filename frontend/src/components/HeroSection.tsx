@@ -30,24 +30,28 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-dvh pt-28 pb-16 md:pt-36 md:pb-24 flex flex-col justify-center overflow-hidden bg-[#FDFCFB]">
-      {/* Background Subtle Luxury Ambience Gradients */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] pointer-events-none -z-10 overflow-hidden">
-        <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[720px] h-[340px] bg-gradient-to-b from-[#C5A880]/12 via-[#FAF9F6]/40 to-transparent rounded-full blur-3xl" />
-        <div className="absolute top-12 left-1/4 w-[380px] h-[280px] bg-gradient-to-br from-[#0D9488]/8 to-transparent rounded-full blur-2xl" />
+      {/* High-Definition Luxury Architectural Background */}
+      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
+        {/* High-definition aesthetic clinic visual, attenuated for editorial luxury */}
+        <Image
+          src="/images/luxury-consultorio.jpg"
+          alt="Instalaciones de medicina estética y cirugía plástica de alta gama"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-25 md:opacity-30 mix-blend-multiply scale-[1.02]"
+        />
+
+        {/* Luxury Vignette & Multilayer Scrims for Flawless Typography Legibility */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FDFCFB] via-[#FDFCFB]/70 to-[#FDFCFB]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#FDFCFB]/92 via-[#FDFCFB]/65 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[380px] bg-gradient-to-b from-[#C5A880]/15 via-transparent to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          {/* Clinical Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF9F6] border border-[#C5A880]/30 shadow-xs mb-6 md:mb-8 animate-in fade-in duration-500">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#C5A880]"></span>
-            <span className="text-[11px] md:text-xs font-semibold uppercase tracking-[0.16em] text-[#1E2024]/90">
-              {t('badge')}
-            </span>
-          </div>
-
           {/* Magnetic Headline */}
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold text-[#121316] tracking-tight leading-[1.12] mb-6">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold text-[#121316] tracking-tight leading-[1.12] mb-6 pt-2 md:pt-4">
             {t('title')}
           </h1>
 
