@@ -1,0 +1,248 @@
+{
+  "Meta": {
+    "title": "Abstergo | High-Converting Web Architecture for Aesthetic Medicine",
+    "description": "Elite web engineering and bespoke design exclusively for plastic surgeons, dermatologists, and luxury aesthetic clinics."
+  },
+  "Navbar": {
+    "brand": "ABSTERGO",
+    "tagline": "CLINICAL WEB ARCHITECTURE",
+    "links": {
+      "cases": "Case Studies",
+      "spaces": "Facilities",
+      "comparison": "Comparison",
+      "features": "Capabilities",
+      "process": "Methodology",
+      "contact": "Audit"
+    },
+    "status": "Online",
+    "statusSub": "Immediate response",
+    "cta": "Schedule Audit"
+  },
+  "Hero": {
+    "badge": "Web Engineering for Aesthetic Medicine & Plastic Surgery",
+    "title": "High-end websites engineered to convert social followers into elective surgery patients.",
+    "subtitle": "We architect the digital authority your clinic commands. Zero-friction mobile performance, instant WhatsApp triage, and sterile luxury aesthetics to justify premium surgical fees.",
+    "ctaWhatsApp": "Book Audit via WhatsApp",
+    "ctaPortfolio": "Explore Facilities",
+    "metrics": {
+      "metric1": {
+        "value": "+82%",
+        "label": "Consultation Conversion",
+        "detail": "Pre-qualified patients vs. conventional websites"
+      },
+      "metric2": {
+        "value": "< 1.0s",
+        "label": "4G Mobile Load Time",
+        "detail": "Engineered for Meta In-App browser"
+      },
+      "metric3": {
+        "value": "100%",
+        "label": "WhatsApp & CRM Sync",
+        "detail": "Automated pre-consultation triage"
+      },
+      "metric4": {
+        "value": "High-Ticket",
+        "label": "Patient Profile",
+        "detail": "Elevates perceived clinical prestige"
+      }
+    },
+    "trustNote": "Exclusively for plastic surgeons, dermatologists, and aesthetic clinics running active ad campaigns."
+  },
+  "Portfolio": {
+    "badge": "PRECISION PORTFOLIO",
+    "title": "High-Performance Case Studies in Aesthetic Healthcare",
+    "subtitle": "Digital architectures engineered to convert cold Instagram and Facebook ad traffic into private consultation bookings.",
+    "viewInteractive": "Interactive Demonstration",
+    "items": [
+      {
+        "id": "dr-arteaga",
+        "doctor": "Dr. Julian Arteaga",
+        "specialty": "Facial Plastic Surgery & Preservation Rhinoplasty",
+        "location": "Cali & Miami",
+        "impact": "+148% validated consultations",
+        "metric": "65% international medical tourists",
+        "description": "Web funnel featuring clinical case viewer by anatomical profile, automated budget pre-qualification, and direct concierge scheduling.",
+        "tags": ["Plastic Surgery", "Medical Tourism", "3D Triage"]
+      },
+      {
+        "id": "letoile",
+        "doctor": "L'Étoile Dermatology Institute",
+        "specialty": "Clinical Dermatology, Laser & Rejuvenation",
+        "location": "Bogota & Mexico City",
+        "impact": "No-shows reduced to 2.4%",
+        "metric": "4.2x Return on Ad Spend (ROAS)",
+        "description": "Guided visual diagnostic funnel where prospective patients pinpoint skin indications before reserving their specialist consultation.",
+        "tags": ["Dermatology", "Medical Laser", "Guided Triage"]
+      },
+      {
+        "id": "aura",
+        "doctor": "Aura Aesthetic Medicine",
+        "specialty": "Facial Harmonization & Regenerative Aesthetics",
+        "location": "Medellin",
+        "impact": "+35% increase in average ticket",
+        "metric": "88% bookings via pre-qualified WhatsApp",
+        "description": "Minimalist digital experience inspired by Swiss medical spas with an interactive anti-aging treatment portfolio.",
+        "tags": ["Aesthetic Medicine", "Harmonization", "High-End Concierge"]
+      }
+    ],
+    "interactivePreview": {
+      "title": "Mobile Patient Experience Comparison",
+      "subtitle": "Swipe or toggle to experience the difference between a sluggish generic template and an Abstergo architecture:",
+      "beforeLabel": "Generic / WordPress Site",
+      "beforeDesc": "Slow loading (6-9s), text-heavy, zero qualification. 70% of Instagram ad traffic bounces before ever seeing the doctor's credentials.",
+      "afterLabel": "Abstergo Architecture",
+      "afterDesc": "Loads in < 1s in in-app browser, striking clinical imagery, interactive treatment selector, and one-tap pre-filled WhatsApp concierge."
+    }
+  },
+  "ClinicSpaces": {
+    "badge": "WORLD-CLASS INFRASTRUCTURE",
+    "title": "Web Architecture Matching the Luxury of Your Physical Practice",
+    "subtitle": "An international patient will never invest thousands of dollars based on a generic template. We translate the sterile sophistication of your physical suites into a high-converting digital authority.",
+    "spaces": [
+      {
+        "id": "consultorio-nivel1",
+        "tag": "Tier 1 • Consultation & Triage",
+        "title": "Medical Consultation & Digital Triage Suite",
+        "desc": "Intimate consultation suite where surgeons review treatment plans on tablets alongside patients. Digital intake pre-qualifies budget and anatomical goals before arrival.",
+        "badge": "Pre-Consultation Conversion: +84%"
+      },
+      {
+        "id": "clinica-nivel3",
+        "tag": "Tier 3 • Advanced Clinical Procedures",
+        "title": "Specialized Clinical Procedure Room",
+        "desc": "Surgical-grade sterility, advanced laser technology, and regenerative treatments. Your website showcases rigorous hygiene and medical technology to eliminate patient skepticism.",
+        "badge": "US Patient Trust Rate: 96%"
+      },
+      {
+        "id": "ttt",
+        "tag": "High-End Suite • Aesthetics & Medical Spa",
+        "title": "Private Harmonization & Minor Surgery Suite",
+        "desc": "Warm architectural lighting, ergonomic clinical treatment bed, and Swiss medical spa ambiance. Engineered to justify $3,000 - $8,000 USD international elective tickets.",
+        "badge": "Average Ticket Lift: +38%"
+      },
+      {
+        "id": "recepcion-clinica",
+        "tag": "VIP Concierge • Medical Tourism",
+        "title": "International Reception & Concierge Lobby",
+        "desc": "The first touchpoint for international patients traveling to Cali. A seamless, five-star welcome orchestrated directly from the website's WhatsApp concierge integration.",
+        "badge": "International Retention: 92%"
+      }
+    ]
+  },
+  "Comparison": {
+    "badge": "INDUSTRY DIAGNOSIS",
+    "title": "Why generic WordPress templates destroy your clinic's credibility",
+    "subtitle": "A patient prepared to invest $5,000+ in facial or body surgery judges your standard of care within the first 2 seconds on their mobile device.",
+    "genericCol": "Generic Site / Cheap Template",
+    "abstergoCol": "Abstergo Clinical Architecture",
+    "rows": [
+      {
+        "criterion": "Speed on Meta Ads (Instagram/FB)",
+        "generic": "6 to 9 seconds load time. You lose up to 65% of paid ad clicks before the page even renders.",
+        "abstergo": "Sub-1.0 second paint. Instantaneous on 4G networks, maximizing every dollar of your advertising spend."
+      },
+      {
+        "criterion": "Patient Screening & Triage",
+        "generic": "Zero triage. Front desk is flooded with tire-kickers asking 'how much?' all day.",
+        "abstergo": "Automated pre-qualification. Patients specify procedure, budget tier, and timeline before contacting you."
+      },
+      {
+        "criterion": "Brand Prestige & Positioning",
+        "generic": "Commoditized $30 template that degrades your practice into a discount clinic.",
+        "abstergo": "Bespoke 'Clinical Luxury' design language reflecting European medical spa exclusivity."
+      },
+      {
+        "criterion": "Medical Tourism & Localization",
+        "generic": "Static single-language page with zero logistical guidance for overseas patients.",
+        "abstergo": "Multi-lingual modules detailing recovery concierge, international accreditations, and travel logistics."
+      },
+      {
+        "criterion": "Health Data Security & Consent",
+        "generic": "Basic form plugins vulnerable to breaches with no medical photo compliance.",
+        "abstergo": "Strict HIPAA/GDPR-compliant encrypted endpoints for sensitive patient assessments."
+      }
+    ]
+  },
+  "Features": {
+    "badge": "CLINICAL ENGINEERING",
+    "title": "Capabilities Built Exclusively for Aesthetic Medical Conversion",
+    "subtitle": "Every module solves a tangible operational bottleneck in modern plastic surgery and aesthetic dermatology clinics.",
+    "items": [
+      {
+        "title": "Intelligent WhatsApp Triage Routing",
+        "desc": "Connects Meta Ads directly with WhatsApp Business, auto-populating procedure details and UTM campaign data.",
+        "tag": "Instant Conversion"
+      },
+      {
+        "title": "Guided Pre-Assessment Forms",
+        "desc": "Multi-step patient intake (target area, prior interventions, aesthetic goals) delivering pre-qualified consultation-ready leads.",
+        "tag": "Zero Tire-Kickers"
+      },
+      {
+        "title": "Radical In-App Browser Optimization",
+        "desc": "Ultra-light code avoiding Instagram webview bottlenecks, guaranteeing silky 60fps scrolling and stable 100dvh layouts.",
+        "tag": "< 1.2s FCP Guaranteed"
+      },
+      {
+        "title": "Local & Medical Tourism SEO",
+        "desc": "Structured semantic schema targeting high-value queries: 'plastic surgeon Colombia', 'preservation rhinoplasty', 'dermatology laser'.",
+        "tag": "Organic Inflow"
+      },
+      {
+        "title": "Ethical Clinical Result Galleries",
+        "desc": "High-resolution case presentations categorized by age bracket, anatomical subtype, and healing timelines.",
+        "tag": "Scientific Authority"
+      },
+      {
+        "title": "Practice Management & CRM Sync",
+        "desc": "Seamless webhook integration with Google Calendar, medical EMRs, and patient coordination desks.",
+        "tag": "24/7 Automation"
+      }
+    ]
+  },
+  "Contact": {
+    "badge": "CONFIDENTIAL STRATEGY AUDIT",
+    "title": "Is your current website leaking high-value patients every day?",
+    "subtitle": "Claim a complimentary technical & conversion audit. We'll analyze your mobile ad speeds, diagnose drop-offs, and provide a clear remediation roadmap.",
+    "form": {
+      "doctorName": "Physician or Practice Director Name",
+      "doctorNamePlaceholder": "e.g. Dr. Robert Miller",
+      "clinicName": "Practice Name & Specialty",
+      "clinicNamePlaceholder": "e.g. Miller Facial Plastic Institute",
+      "city": "City & Country",
+      "cityPlaceholder": "e.g. Miami, USA (or Cali, Colombia)",
+      "contactInfo": "WhatsApp / Direct Phone",
+      "contactInfoPlaceholder": "+1 (305) 555-0198",
+      "submit": "Request Confidential Web Audit",
+      "submitting": "Transmitting request...",
+      "successTitle": "Request Received",
+      "successDesc": "Our web architecture team is analyzing your digital presence. We will reach out within 2 business hours.",
+      "successWhatsAppBtn": "Continue conversation on WhatsApp now",
+      "privacyNotice": "Protected under strict healthcare and commercial non-disclosure standards."
+    },
+    "directWhatsApp": {
+      "badge": "DIRECT CHANNEL",
+      "title": "Prefer to speak directly with an architect?",
+      "desc": "Reach out on WhatsApp to schedule an immediate 20-minute private video diagnostic with live demo.",
+      "button": "Chat Directly via WhatsApp"
+    }
+  },
+  "StickyMobile": {
+    "status": "Online for your practice",
+    "cta": "Audit via WhatsApp",
+    "subtext": "Response in < 5 mins"
+  },
+  "Footer": {
+    "brand": "ABSTERGO",
+    "desc": "Boutique web engineering and design firm dedicated exclusively to plastic surgeons, dermatologists, and luxury aesthetic practices.",
+    "standards": "Clinical-Grade Standards",
+    "standardsList": [
+      "Meta In-App Browser Optimization",
+      "Patient Health Data Protection",
+      "Certified FCP < 1.2s",
+      "WhatsApp Business API Integration"
+    ],
+    "copyright": "© 2026 Abstergo Studio. All rights reserved. Digital Architecture for the Medical Elite.",
+    "city": "Cali & Medellin, Colombia — Global Concierge"
+  }
+}

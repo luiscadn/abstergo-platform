@@ -1,0 +1,248 @@
+{
+  "Meta": {
+    "title": "Abstergo | Arquitectura Web de Alta Conversión para Medicina Estética",
+    "description": "Ingeniería y diseño web de alta gama para cirujanos plásticos, dermatólogos y clínicas estéticas de élite."
+  },
+  "Navbar": {
+    "brand": "ABSTERGO",
+    "tagline": "CLINICAL WEB ARCHITECTURE",
+    "links": {
+      "cases": "Casos de Éxito",
+      "spaces": "Instalaciones",
+      "comparison": "Comparativa",
+      "features": "Capacidades",
+      "process": "Metodología",
+      "contact": "Auditoría"
+    },
+    "status": "En línea",
+    "statusSub": "Respuesta inmediata",
+    "cta": "Agendar Auditoría"
+  },
+  "Hero": {
+    "badge": "Ingeniería Web para Medicina Estética & Cirugía Plástica",
+    "title": "Páginas web de alta gama que convierten seguidores en pacientes de procedimientos estéticos.",
+    "subtitle": "Diseñamos la autoridad digital que tu clínica merece. Carga instantánea en Meta Ads, triaje pre-consulta y estética quirúrgica impecable con un alto retorno de inversión.",
+    "ctaWhatsApp": "Agendar Auditoría por WhatsApp",
+    "ctaPortfolio": "Explorar Instalaciones",
+    "metrics": {
+      "metric1": {
+        "value": "+82%",
+        "label": "Conversión de Citas",
+        "detail": "Filtro cualificado vs. webs convencionales"
+      },
+      "metric2": {
+        "value": "< 1.0s",
+        "label": "Carga en Móvil 4G",
+        "detail": "Optimizado para navegador de Instagram"
+      },
+      "metric3": {
+        "value": "100%",
+        "label": "Integrado a WhatsApp & CRM",
+        "detail": "Triaje pre-consulta automatizado"
+      },
+      "metric4": {
+        "value": "High-Ticket",
+        "label": "Perfil del Paciente",
+        "detail": "Diseño que eleva la percepción de valor"
+      }
+    },
+    "trustNote": "Exclusivo para cirujanos plásticos, dermatólogos y clínicas estéticas con inversión activa en pauta publicitaria."
+  },
+  "Portfolio": {
+    "badge": "PORTAFOLIO DE PRECISIÓN",
+    "title": "Casos Reales de Alto Rendimiento en Salud Estética",
+    "subtitle": "Estructuras digitales diseñadas para convertir el tráfico de Instagram y Facebook Ads en consultas privadas de valoración.",
+    "viewInteractive": "Demostración de Interacción",
+    "items": [
+      {
+        "id": "dr-arteaga",
+        "doctor": "Dr. Julián Arteaga",
+        "specialty": "Cirugía Plástica Facial & Rinoplastia de Preservación",
+        "location": "Cali & Miami",
+        "impact": "+148% en consultas valoradas",
+        "metric": "65% pacientes internacionales",
+        "description": "Embudo web con visor de resultados clínicos por tipo de nariz, pre-calificación presupuestal y agenda directa coordinada.",
+        "tags": ["Cirugía Plástica", "Turismo Médico", "Triaje 3D"]
+      },
+      {
+        "id": "letoile",
+        "doctor": "L'Étoile Instituto Dermatológico",
+        "specialty": "Dermatología Clínica, Láser & Rejuvenecimiento",
+        "location": "Bogotá & Ciudad de México",
+        "impact": "No-shows reducidos al 2.4%",
+        "metric": "4.2x Retorno sobre Gasto Publicitario",
+        "description": "Flujo de diagnóstico visual guiado donde el paciente identifica su condición de piel antes de seleccionar la consulta especializada.",
+        "tags": ["Dermatología", "Láser Médico", "Triaje Guiado"]
+      },
+      {
+        "id": "aura",
+        "doctor": "Aura Aesthetic Medicine",
+        "specialty": "Armonización Facial & Medicina Regenerativa",
+        "location": "Medellín",
+        "impact": "+35% incremento en ticket promedio",
+        "metric": "88% agendamientos por WhatsApp calificado",
+        "description": "Experiencia digital minimalista inspirada en spas médicos suizos con catálogo interactivo de protocolos antiedad.",
+        "tags": ["Medicina Estética", "Armonización", "High-End Concierge"]
+      }
+    ],
+    "interactivePreview": {
+      "title": "Comparativa de Experiencia de Paciente en Dispositivo Móvil",
+      "subtitle": "Desliza para ver la diferencia de impacto entre un sitio genérico y una arquitectura Abstergo:",
+      "beforeLabel": "Sitio Tradicional / WordPress",
+      "beforeDesc": "Carga lenta (6-9s), saturado de texto, sin triaje, el 70% de los usuarios de Instagram abandona antes de ver al doctor.",
+      "afterLabel": "Arquitectura Abstergo",
+      "afterDesc": "Carga en < 1s en in-app browser, fotografía clínica de impacto, selector de tratamiento y WhatsApp pre-llenado con un toque."
+    }
+  },
+  "ClinicSpaces": {
+    "badge": "INFRAESTRUCTURA DE CLASE MUNDIAL",
+    "title": "Diseño Web que Hace Honor al Lujo de tus Instalaciones",
+    "subtitle": "Un paciente internacional no invierte en un sitio genérico. Conectamos la excelencia física de tu consultorio con una experiencia digital a la altura de tus procedimientos.",
+    "spaces": [
+      {
+        "id": "consultorio-nivel1",
+        "tag": "Nivel 1 • Consulta & Triaje",
+        "title": "Consultorio de Valoración Médica & Triaje Digital",
+        "desc": "Espacio íntimo donde el especialista planifica el procedimiento en tablet frente al paciente. El embudo digital pre-califica presupuesto y antecedentes antes de cruzar la puerta.",
+        "badge": "Conversión Pre-Consulta: +84%"
+      },
+      {
+        "id": "clinica-nivel3",
+        "tag": "Nivel 3 • Procedimientos Avanzados",
+        "title": "Cabina Clínica de Alta Especialidad",
+        "desc": "Protocolos dermatológicos, tecnología láser y rejuvenecimiento celular. La web expone la rigurosidad higiénica y el instrumental de vanguardia para despejar cualquier objeción de seguridad.",
+        "badge": "Confianza de Pacientes USA: 96%"
+      },
+      {
+        "id": "ttt",
+        "tag": "High-End Suite • Estética & Spa Médico",
+        "title": "Suite Privada de Armonización & Cirugía Menor",
+        "desc": "Iluminación cálida, mobiliario ergonómico quirúrgico y ambientación de spa suizo. Diseñado para justificar tickets de alto valor.",
+        "badge": "Ticket Promedio: +38%"
+      },
+      {
+        "id": "recepcion-clinica",
+        "tag": "Concierge VIP • Turismo Médico",
+        "title": "Recepción & Atención Internacional",
+        "desc": "La primera impresión de tus pacientes extranjeros al aterrizar en Cali. Una experiencia cálida y coordinada que inicia desde el primer mensaje de WhatsApp en la página web.",
+        "badge": "Retención Internacional: 92%"
+      }
+    ]
+  },
+  "Comparison": {
+    "badge": "DIAGNÓSTICO DEL SECTOR",
+    "title": "¿Por qué las plantillas genéricas destruyen la credibilidad de tu clínica?",
+    "subtitle": "Un paciente dispuesto a invertir miles de dólares en su rostro o cuerpo evalúa tu nivel de excelencia desde el primer segundo en su teléfono.",
+    "genericCol": "Sitio Web Genérico / Plantilla",
+    "abstergoCol": "Arquitectura Médica Abstergo",
+    "rows": [
+      {
+        "criterion": "Velocidad en Meta Ads (Instagram/FB)",
+        "generic": "6 a 9 segundos de carga. Pierdes más del 65% de clics pagos antes de que la página abra.",
+        "abstergo": "Menor a 1.0 segundo. Instantáneo en redes 4G móviles, aprovechando cada peso de tu pauta publicitaria."
+      },
+      {
+        "criterion": "Filtrado y Calificación de Pacientes",
+        "generic": "Cero triaje. Tu recepcionista pierde horas respondiendo '¿precio?' a curiosos sin presupuesto.",
+        "abstergo": "Triaje pre-consulta automatizado. El paciente especifica tratamiento, presupuesto y urgencia antes de contactar."
+      },
+      {
+        "criterion": "Psicología Visual & Posicionamiento",
+        "generic": "Plantilla genérica de 30 USD que hace que tu clínica parezca un commodity de bajo costo.",
+        "abstergo": "Estética 'Clinical Luxury' con códigos de hospitalidad premium suiza que respaldan tarifas elevadas."
+      },
+      {
+        "criterion": "Turismo Médico y Geolocalización",
+        "generic": "Página estática en un solo idioma sin información logística para pacientes del extranjero.",
+        "abstergo": "Módulos bilingües con guías de recuperación, credenciales internacionales y conserjería médica."
+      },
+      {
+        "criterion": "Seguridad de Datos & Consentimiento",
+        "generic": "Formularios básicos sin cumplimiento legal para manejo de imágenes clínicas confidenciales.",
+        "abstergo": "Protocolos estrictos de privacidad y almacenamiento seguro para fotografía de valoración médica."
+      }
+    ]
+  },
+  "Features": {
+    "badge": "INGENIERÍA CLÍNICA",
+    "title": "Capacidades Diseñadas para la Conversión Médica",
+    "subtitle": "Cada funcionalidad responde a una necesidad real del consultorio moderno de cirugía y dermatología estética.",
+    "items": [
+      {
+        "title": "Triaje Inteligente hacia WhatsApp",
+        "desc": "Conecta tus anuncios de Meta directamente con WhatsApp Business, transfiriendo el procedimiento de interés y los datos del paciente en el mensaje.",
+        "tag": "Conversión Inmediata"
+      },
+      {
+        "title": "Formularios de Pre-Valoración Guiada",
+        "desc": "Preguntas dinámicas por pasos (zona a tratar, cirugías previas, expectativas) que entregan un paciente listo para consulta de valoración.",
+        "tag": "Cero Curiosos"
+      },
+      {
+        "title": "Optimización Radical para In-App Browsers",
+        "desc": "Código ultra-ligero que evita los cuellos de botella del navegador interno de Instagram, garantizando scroll sedoso a 60fps.",
+        "tag": "< 1.2s FCP Garantizado"
+      },
+      {
+        "title": "SEO Médico Local e Internacional",
+        "desc": "Estructura semántica optimizada para captar búsquedas de alto valor: 'cirujano plástico Cali', 'rinoplastia Colombia', 'dermatología láser'.",
+        "tag": "Pacientes Orgánicos"
+      },
+      {
+        "title": "Galerías de Resultados Médicos Confiables",
+        "desc": "Presentación ética de casos clínicos con filtros por edad, tipo de procedimiento y tiempo de evolución post-operatorio.",
+        "tag": "Autoridad Científica"
+      },
+      {
+        "title": "Sincronización con tu Agenda Médica",
+        "desc": "Integración transparente con calendarios, CRM de salud o el equipo de admisiones de tu consultorio.",
+        "tag": "Automatización 24/7"
+      }
+    ]
+  },
+  "Contact": {
+    "badge": "AUDITORÍA ESTRATÉGICA PRIVADA",
+    "title": "¿Tu sitio web actual está perdiendo pacientes todos los días?",
+    "subtitle": "Solicita una auditoría técnica y comercial sin costo. Analizaremos tu velocidad en Instagram, la fricción de tu embudo y te entregaremos una hoja de ruta con mejoras concretas.",
+    "form": {
+      "doctorName": "Nombre del Especialista o Director",
+      "doctorNamePlaceholder": "Ej. Dr. Mauricio Gómez",
+      "clinicName": "Nombre de la Clínica y Especialidad",
+      "clinicNamePlaceholder": "Ej. Clínica Estética Alma — Cirugía Facial",
+      "city": "Ciudad y País",
+      "cityPlaceholder": "Ej. Cali, Colombia (o Miami, EE.UU.)",
+      "contactInfo": "WhatsApp / Teléfono Móvil",
+      "contactInfoPlaceholder": "+57 300 123 4567",
+      "submit": "Solicitar Auditoría Web Confidencial",
+      "submitting": "Procesando solicitud...",
+      "successTitle": "¡Solicitud Recibida!",
+      "successDesc": "Nuestro equipo de arquitectos web revisará la presencia digital de tu clínica y se comunicará contigo en menos de 2 horas hábiles.",
+      "successWhatsAppBtn": "Continuar conversación en WhatsApp ahora",
+      "privacyNotice": "Información protegida bajo estricto acuerdo de confidencialidad médico-comercial."
+    },
+    "directWhatsApp": {
+      "badge": "RESPUESTA DIRECTA",
+      "title": "¿Prefieres hablar directamente con un arquitecto web?",
+      "desc": "Escríbenos por WhatsApp para agendar una videollamada privada de 20 minutos con demostración en vivo.",
+      "button": "Chatear con un Asesor por WhatsApp"
+    }
+  },
+  "StickyMobile": {
+    "status": "En línea para tu clínica",
+    "cta": "Auditoría por WhatsApp",
+    "subtext": "Respuesta en < 5 min"
+  },
+  "Footer": {
+    "brand": "ABSTERGO",
+    "desc": "Boutique de ingeniería y diseño web especializada exclusivamente en cirujanos plásticos, dermatólogos y clínicas estéticas de alta gama.",
+    "standards": "Estándares de Grado Clínico",
+    "standardsList": [
+      "Optimización para In-App Browsers de Meta",
+      "Privacidad y Protección de Datos Médicos",
+      "Velocidad Certificada FCP < 1.2s",
+      "Integración WhatsApp Business API"
+    ],
+    "copyright": "© 2026 Abstergo Studio. Todos los derechos reservados. Arquitectura Digital para la Élite Médica.",
+    "city": "Cali & Medellín, Colombia — Operación Internacional"
+  }
+}
