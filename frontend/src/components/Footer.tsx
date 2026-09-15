@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Shield, Lock, Zap, CheckCircle2 } from 'lucide-react';
+import AbstergoIcon from './AbstergoIcon';
 
 export default function Footer() {
   const t = useTranslations('Footer');
@@ -13,9 +14,7 @@ export default function Footer() {
           {/* Brand & Manifesto */}
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-[#FAF9F6] text-[#121316] flex items-center justify-center font-serif text-lg font-bold">
-                A
-              </div>
+              <AbstergoIcon variant="light" className="w-8 h-8 drop-shadow-xs" />
               <span className="font-serif text-xl tracking-[0.2em] font-semibold text-[#FAF9F6]">
                 {t('brand')}
               </span>

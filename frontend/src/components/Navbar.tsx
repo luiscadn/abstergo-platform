@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Link, usePathname } from '@/navigation';
 import { useUtmTracking } from '@/hooks/useUtmTracking';
 import { MessageCircle, Menu, X, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import AbstergoIcon from './AbstergoIcon';
 
 export default function Navbar() {
   const t = useTranslations('Navbar');
@@ -44,9 +45,7 @@ export default function Navbar() {
           className="flex items-center gap-2.5 group cursor-pointer"
           aria-label="Abstergo Home"
         >
-          <div className="w-9 h-9 rounded-lg bg-[#121316] text-[#FDFCFB] flex items-center justify-center font-serif text-lg font-bold shadow-xs group-hover:bg-[#C5A880] transition-colors duration-300">
-            A
-          </div>
+          <AbstergoIcon className="w-9 h-9 group-hover:scale-105 transition-transform duration-300 drop-shadow-xs" />
           <div className="flex flex-col">
             <span className="font-serif text-xl tracking-[0.18em] font-semibold text-[#121316] leading-none">
               {t('brand')}

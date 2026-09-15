@@ -1,0 +1,55 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Luxury Champagne Gold Gradients -->
+    <linearGradient id="abstergo-gold-left" x1="120" y1="420" x2="256" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8C6D46"/>
+      <stop offset="30%" stop-color="#C5A880"/>
+      <stop offset="65%" stop-color="#E5D1B8"/>
+      <stop offset="100%" stop-color="#C5A880"/>
+    </linearGradient>
+
+    <linearGradient id="abstergo-gold-right" x1="256" y1="70" x2="400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E5D1B8"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="70%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#7E6038"/>
+    </linearGradient>
+
+    <linearGradient id="abstergo-gold-facet" x1="200" y1="200" x2="290" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C5A880" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9A7B56" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <filter id="luxury-glow" x="70" y="50" width="372" height="400" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Optional Luxury Onyx Rounded Background Plate -->
+  <rect width="512" height="512" rx="112" fill="#121316"/>
+
+  <g transform="translate(0, 8)">
+    <!-- Ambient gold backlight -->
+    <circle cx="256" cy="240" r="140" fill="#C5A880" opacity="0.12" filter="url(#luxury-glow)"/>
+
+    <!-- Left Arch of 'A' -->
+    <path d="M256 92C236 92 205 130 182 178C148 248 116 338 112 396C138 398 174 390 206 366C224 330 238 284 246 252C232 252 220 252 216 220C238 220 248 170 256 92Z" 
+          fill="url(#abstergo-gold-left)"/>
+
+    <!-- Right Arch of 'A' -->
+    <path d="M256 92C276 92 307 130 330 178C364 248 396 338 400 396C374 398 338 390 306 366C288 330 274 284 266 252C280 252 292 252 296 220C274 220 264 170 256 92Z" 
+          fill="url(#abstergo-gold-right)"/>
+
+    <!-- Dimensional Facet Shading -->
+    <path d="M256 92C248 135 238 185 224 220C236 220 246 230 250 252C256 252 260 252 266 252C272 230 282 220 294 220C280 185 270 135 256 92Z" 
+          fill="url(#abstergo-gold-facet)" opacity="0.65"/>
+
+    <!-- Central Clinical Cross (+) in Negative Space / Alabaster Light -->
+    <path d="M234 196H278V232H314V272H278V330H234V272H198V232H234V196Z" 
+          fill="#FDFCFB"/>
+
+    <!-- Subtle cross center accent in onyx -->
+    <rect x="250" y="246" width="12" height="12" rx="2" fill="#121316" opacity="0.2"/>
+  </g>
+</svg>
