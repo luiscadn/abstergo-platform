@@ -31,24 +31,24 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-dvh pt-28 pb-16 md:pt-36 md:pb-24 flex flex-col justify-center overflow-hidden bg-[#FDFCFB]">
       {/* High-Definition Luxury Architectural Background */}
-      <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden">
-        {/* High-definition aesthetic clinic visual, attenuated for editorial luxury */}
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
+        {/* Aesthetic clinic visual, attenuated for luxury ambiance */}
         <Image
           src="/images/luxury-consultorio.jpg"
           alt="Instalaciones de medicina estética y cirugía plástica de alta gama"
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center opacity-25 md:opacity-30 mix-blend-multiply scale-[1.02]"
+          className="object-cover object-center opacity-35 md:opacity-40 scale-[1.02]"
         />
 
-        {/* Luxury Vignette & Multilayer Scrims for Flawless Typography Legibility */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FDFCFB] via-[#FDFCFB]/70 to-[#FDFCFB]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#FDFCFB]/92 via-[#FDFCFB]/65 to-transparent" />
+        {/* Soft luxury scrims ensuring perfect typography readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#FDFCFB]/60 via-[#FDFCFB]/45 to-[#FDFCFB]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(253,252,251,0.78)_0%,_rgba(253,252,251,0.4)_60%,_transparent_100%)]" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[380px] bg-gradient-to-b from-[#C5A880]/15 via-transparent to-transparent rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Magnetic Headline */}
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold text-[#121316] tracking-tight leading-[1.12] mb-6 pt-2 md:pt-4">
