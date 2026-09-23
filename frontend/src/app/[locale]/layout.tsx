@@ -1,9 +1,11 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import Script from 'next/script';
 import { routing } from '@/i18n/routing';
 import { Plus_Jakarta_Sans, Cormorant_Garamond } from 'next/font/google';
 import type { Metadata, Viewport } from 'next';
+import { META_PIXEL_ID } from '@/lib/pixel';
 import '@/app/globals.css';
 
 const sansFont = Plus_Jakarta_Sans({
@@ -30,24 +32,25 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Abstergo | Arquitectura Web de Alta Conversión para Medicina Estética & Clínicas de Lujo',
-  description: 'Ingeniería y diseño web de alta gama para cirujanos plásticos, dermatólogos y clínicas estéticas de élite. Funnels optimizados para Meta Ads, triaje médico y turismo estético.',
+  title: 'Abstergo · Tu tratamiento dental en Cali, coordinado',
+  description:
+    'Clínica verificada, hotel de recuperación, traslados y acompañamiento por WhatsApp. Un solo precio cerrado, y respondemos por ti si algo sale mal.',
   keywords: [
-    'diseño web medicina estética',
-    'marketing médicos cirujanos plásticos',
-    'páginas web clínicas dermatológicas',
-    'funnel conversión pacientes estética',
-    'arquitectura web salud de lujo',
-    'turismo médico Colombia',
-    'Abstergo'
+    'tratamiento dental cali',
+    'diseño de sonrisa cali colombia',
+    'implantes dentales cali',
+    'carillas dentales cali',
+    'turismo dental cali colombia',
+    'abstergo turismo medico',
+    'coordinacion dental cali'
   ],
-  authors: [{ name: 'Abstergo Studio' }],
+  authors: [{ name: 'Abstergo' }],
   openGraph: {
-    title: 'Abstergo | Arquitectura Web de Alta Conversión para Medicina Estética',
-    description: 'Páginas web de alta gama que convierten seguidores en pacientes de procedimientos estéticos de alto ticket.',
+    title: 'Abstergo · Tu tratamiento dental en Cali, coordinado',
+    description:
+      'Clínica verificada, hotel de recuperación, traslados y acompañamiento por WhatsApp. Un solo precio cerrado, y respondemos por ti si algo sale mal.',
     type: 'website',
-    locale: 'es_ES',
-    alternateLocale: 'en_US',
+    locale: 'es_CO',
     siteName: 'Abstergo',
   },
 };
@@ -65,7 +68,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
 
@@ -73,8 +76,35 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${sansFont.variable} ${serifFont.variable}`}>
-      <body className="bg-[#FDFCFB] text-[#121316] font-sans antialiased selection:bg-[#D4AF37]/20 selection:text-[#121316] min-h-dvh flex flex-col">
+    <html lang={locale || 'es'} className={`${sansFont.variable} ${serifFont.variable}`}>
+      <head>
+        {/* Meta Pixel Standard Integration */}
+        <Script id="meta-pixel-init" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '${META_PIXEL_ID}');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+            alt=""
+          />
+        </noscript>
+      </head>
+      <body className="bg-[#FDFCFB] text-[#121316] font-sans antialiased selection:bg-[#C5A880]/20 selection:text-[#121316] min-h-dvh flex flex-col">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

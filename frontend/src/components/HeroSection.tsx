@@ -1,239 +1,120 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
-import Image from 'next/image';
 import { useUtmTracking } from '@/hooks/useUtmTracking';
+import { handleWhatsAppCtaClick } from '@/lib/pixel';
 import {
   MessageCircle,
   ArrowRight,
-  Shield,
-  Zap,
-  CheckCircle2,
-  TrendingUp,
-  Sparkles,
-  Award,
-  Smartphone,
-  Building2
+  ShieldCheck,
+  Building,
+  Car,
+  HeartHandshake,
 } from 'lucide-react';
 
 export default function HeroSection() {
-  const t = useTranslations('Hero');
-  const locale = useLocale();
   const { buildWhatsAppUrl } = useUtmTracking();
+  const whatsappHref = buildWhatsAppUrl();
 
-  const whatsappMessage =
-    locale === 'es'
-      ? 'Hola, vi la propuesta de Abstergo y me gustaría solicitar una auditoría de conversión para nuestra clínica estética.'
-      : 'Hello, I saw Abstergo and would like to request a conversion audit for our aesthetic practice.';
-
-  const whatsappHref = buildWhatsAppUrl(whatsappMessage);
+  const handleCtaClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    handleWhatsAppCtaClick(e, 'hero', 'patient');
+  };
 
   return (
-    <section className="relative min-h-dvh pt-28 pb-16 md:pt-36 md:pb-24 flex flex-col justify-center overflow-hidden bg-[#FDFCFB]">
-      {/* High-Definition Luxury Architectural Background */}
+    <section className="relative min-h-[90dvh] pt-28 pb-16 md:pt-36 md:pb-24 flex flex-col justify-center overflow-hidden bg-[#FDFCFB]">
+      {/* Warm Ambient Background Scrims */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none">
-        {/* Aesthetic clinic visual, attenuated for luxury ambiance */}
-        <Image
-          src="/images/luxury-consultorio.jpg"
-          alt="Instalaciones de medicina estética y cirugía plástica de alta gama"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center opacity-35 md:opacity-40 scale-[1.02]"
-        />
-
-        {/* Soft luxury scrims ensuring perfect typography readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#FDFCFB]/60 via-[#FDFCFB]/45 to-[#FDFCFB]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(253,252,251,0.78)_0%,_rgba(253,252,251,0.4)_60%,_transparent_100%)]" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[380px] bg-gradient-to-b from-[#C5A880]/15 via-transparent to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-[420px] bg-gradient-to-b from-[#C5A880]/15 via-[#0D9488]/5 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-[#C5A880]/10 rounded-full blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-          {/* Magnetic Headline */}
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold text-[#121316] tracking-tight leading-[1.12] mb-6 pt-2 md:pt-4">
-            {t('title')}
+          {/* Reassuring Trust Tag */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAF9F6] border border-[#C5A880]/30 shadow-xs mb-6">
+            <ShieldCheck className="w-4 h-4 text-[#0D9488]" />
+            <span className="text-xs font-semibold tracking-wide text-[#1E2024]/90">
+              Coordinación integral de turismo dental en Cali
+            </span>
+          </div>
+
+          {/* Magnetic H1 */}
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[62px] font-bold text-[#121316] tracking-tight leading-[1.14] mb-6">
+            Tu tratamiento dental en Cali, coordinado de principio a fin.
           </h1>
 
-          {/* Authoritative Subtitle */}
-          <p className="font-sans text-base sm:text-lg md:text-xl text-[#1E2024]/80 max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10 font-light">
-            {t('subtitle')}
+          {/* Reassuring Subtitle */}
+          <p className="font-sans text-base sm:text-lg md:text-xl text-[#1E2024]/80 max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10 font-normal">
+            Clínica verificada, hotel de recuperación, traslados y acompañamiento por WhatsApp. Un solo precio cerrado, y respondemos por ti si algo sale mal.
           </p>
 
-          {/* Dual Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10 md:mb-14">
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-4">
             <a
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#121316] text-[#FDFCFB] font-semibold text-sm sm:text-base tracking-wide shadow-md hover:bg-[#C5A880] hover:shadow-lg transition-all duration-300 touch-target-min group"
+              data-cta="hero"
+              onClick={handleCtaClick}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#121316] text-[#FDFCFB] font-semibold text-sm sm:text-base tracking-wide shadow-md hover:bg-[#C5A880] hover:text-[#121316] hover:shadow-lg transition-all duration-300 touch-target-min group"
             >
               <MessageCircle className="w-5 h-5 text-[#D4AF37] group-hover:scale-110 transition-transform" />
-              <span>{t('ctaWhatsApp')}</span>
+              <span>Cotiza por WhatsApp</span>
               <ArrowRight className="w-4 h-4 opacity-70 group-hover:translate-x-0.5 transition-transform" />
             </a>
 
             <a
-              href="#espacios"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#FAF9F6] text-[#121316] font-medium text-sm sm:text-base border border-[#121316]/10 hover:border-[#121316]/30 hover:bg-[#F8F9FA] transition-all duration-300 touch-target-min"
+              href="#como-funciona"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#FAF9F6] text-[#121316] font-medium text-sm sm:text-base border border-[#121316]/12 hover:border-[#121316]/30 hover:bg-[#F3EFEA] transition-all duration-300 touch-target-min"
             >
-              <span>{t('ctaPortfolio')}</span>
+              <span>Ver cómo funciona</span>
             </a>
           </div>
 
-          {/* Trust Note */}
-          <div className="flex items-center gap-2 text-xs text-[#1E2024]/60 mb-12">
-            <Shield className="w-3.5 h-3.5 text-[#0D9488]" />
-            <span>{t('trustNote')}</span>
-          </div>
+          {/* Microtexto bajo el CTA */}
+          <p className="text-xs sm:text-sm text-[#1E2024]/65 mb-12">
+            Para colombianos en EE.UU., España y el resto del mundo.
+          </p>
 
-          {/* Micro-Metrics Bar */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 w-full max-w-4xl text-left">
-            <div className="p-4 md:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/6 shadow-xs hover:border-[#C5A880]/40 transition-colors">
-              <div className="flex items-center gap-2 mb-1">
-                <TrendingUp className="w-4 h-4 text-[#0D9488]" />
-                <span className="font-serif text-2xl md:text-3xl font-bold text-[#121316]">
-                  {t('metrics.metric1.value')}
-                </span>
+          {/* 4 Pillars of Reassurance (No fake metrics) */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 w-full max-w-4xl text-left">
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/8 shadow-xs">
+              <ShieldCheck className="w-5 h-5 text-[#0D9488] mb-2" />
+              <div className="font-serif text-sm sm:text-base font-bold text-[#121316]">
+                Clínica Verificada
               </div>
-              <p className="text-xs font-semibold text-[#121316]">
-                {t('metrics.metric1.label')}
-              </p>
-              <p className="text-[11px] text-[#1E2024]/60 mt-0.5">
-                {t('metrics.metric1.detail')}
+              <p className="text-xs text-[#1E2024]/70 mt-1 leading-snug">
+                Habilitación y credenciales transparentes antes de reservar.
               </p>
             </div>
 
-            <div className="p-4 md:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/6 shadow-xs hover:border-[#C5A880]/40 transition-colors">
-              <div className="flex items-center gap-2 mb-1">
-                <Zap className="w-4 h-4 text-[#D4AF37]" />
-                <span className="font-serif text-2xl md:text-3xl font-bold text-[#121316]">
-                  {t('metrics.metric2.value')}
-                </span>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/8 shadow-xs">
+              <Building className="w-5 h-5 text-[#C5A880] mb-2" />
+              <div className="font-serif text-sm sm:text-base font-bold text-[#121316]">
+                Hotel Seleccionado
               </div>
-              <p className="text-xs font-semibold text-[#121316]">
-                {t('metrics.metric2.label')}
-              </p>
-              <p className="text-[11px] text-[#1E2024]/60 mt-0.5">
-                {t('metrics.metric2.detail')}
+              <p className="text-xs text-[#1E2024]/70 mt-1 leading-snug">
+                Alojamiento cómodo y adaptado a tu período de recuperación.
               </p>
             </div>
 
-            <div className="p-4 md:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/6 shadow-xs hover:border-[#C5A880]/40 transition-colors">
-              <div className="flex items-center gap-2 mb-1">
-                <CheckCircle2 className="w-4 h-4 text-[#0D9488]" />
-                <span className="font-serif text-2xl md:text-3xl font-bold text-[#121316]">
-                  {t('metrics.metric3.value')}
-                </span>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/8 shadow-xs">
+              <Car className="w-5 h-5 text-[#D4AF37] mb-2" />
+              <div className="font-serif text-sm sm:text-base font-bold text-[#121316]">
+                Traslados Privados
               </div>
-              <p className="text-xs font-semibold text-[#121316]">
-                {t('metrics.metric3.label')}
-              </p>
-              <p className="text-[11px] text-[#1E2024]/60 mt-0.5">
-                {t('metrics.metric3.detail')}
+              <p className="text-xs text-[#1E2024]/70 mt-1 leading-snug">
+                Recogida en aeropuerto, traslados a la clínica y al hotel.
               </p>
             </div>
 
-            <div className="p-4 md:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/6 shadow-xs hover:border-[#C5A880]/40 transition-colors">
-              <div className="flex items-center gap-2 mb-1">
-                <Award className="w-4 h-4 text-[#C5A880]" />
-                <span className="font-serif text-2xl md:text-3xl font-bold text-[#121316]">
-                  {t('metrics.metric4.value')}
-                </span>
+            <div className="p-4 sm:p-5 rounded-2xl bg-[#FAF9F6] border border-[#121316]/8 shadow-xs">
+              <HeartHandshake className="w-5 h-5 text-[#0D9488] mb-2" />
+              <div className="font-serif text-sm sm:text-base font-bold text-[#121316]">
+                Respaldo Continuo
               </div>
-              <p className="text-xs font-semibold text-[#121316]">
-                {t('metrics.metric4.label')}
+              <p className="text-xs text-[#1E2024]/70 mt-1 leading-snug">
+                Acompañamiento personal antes, durante y después del viaje.
               </p>
-              <p className="text-[11px] text-[#1E2024]/60 mt-0.5">
-                {t('metrics.metric4.detail')}
-              </p>
-            </div>
-          </div>
-
-          {/* Visual Showcase Preview of Real Clinical Suites */}
-          <div className="mt-14 md:mt-16 w-full max-w-5xl">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#C5A880]"></span>
-              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#1E2024]/70">
-                Arquitectura Web Implementada en Instalaciones de Alta Complejidad
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              {/* Card 1 */}
-              <div className="group relative rounded-2xl overflow-hidden border border-[#121316]/8 shadow-xs bg-[#FAF9F6]">
-                <div className="relative h-48 sm:h-52 w-full">
-                  <Image
-                    src="/images/consultorio-nivel1.webp"
-                    alt="Consultorio Nivel 1"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121316]/85 via-[#121316]/20 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-1 rounded-full bg-[#FDFCFB]/90 backdrop-blur-md text-[9px] font-bold uppercase tracking-wider text-[#121316] border border-white/40 shadow-xs flex items-center gap-1">
-                      <Building2 className="w-3 h-3 text-[#C5A880]" />
-                      Nivel 1 • Consulta Médica
-                    </span>
-                  </div>
-                  <div className="absolute bottom-3 left-3 right-3 text-left text-white">
-                    <h4 className="font-serif font-bold text-sm leading-tight">Consultorio de Triaje & Valoración</h4>
-                    <p className="text-[10px] text-white/75 mt-0.5">Captación y diagnóstico guiado</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 2 */}
-              <div className="group relative rounded-2xl overflow-hidden border border-[#121316]/8 shadow-xs bg-[#FAF9F6]">
-                <div className="relative h-48 sm:h-52 w-full">
-                  <Image
-                    src="/images/clinica-nivel3.webp"
-                    alt="Cabina Nivel 3"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121316]/85 via-[#121316]/20 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-1 rounded-full bg-[#FDFCFB]/90 backdrop-blur-md text-[9px] font-bold uppercase tracking-wider text-[#121316] border border-white/40 shadow-xs flex items-center gap-1">
-                      <Building2 className="w-3 h-3 text-[#C5A880]" />
-                      Nivel 3 • Procedimientos
-                    </span>
-                  </div>
-                  <div className="absolute bottom-3 left-3 right-3 text-left text-white">
-                    <h4 className="font-serif font-bold text-sm leading-tight">Cabina Dermatológica & Láser</h4>
-                    <p className="text-[10px] text-white/75 mt-0.5">Asepsia de grado quirúrgico</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Card 3 */}
-              <div className="group relative rounded-2xl overflow-hidden border border-[#121316]/8 shadow-xs bg-[#FAF9F6]">
-                <div className="relative h-48 sm:h-52 w-full">
-                  <Image
-                    src="/images/ttt.webp"
-                    alt="Suite Estética de Lujo"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121316]/85 via-[#121316]/20 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-1 rounded-full bg-[#FDFCFB]/90 backdrop-blur-md text-[9px] font-bold uppercase tracking-wider text-[#121316] border border-white/40 shadow-xs flex items-center gap-1">
-                      <Building2 className="w-3 h-3 text-[#C5A880]" />
-                      High-End • Luxury Suite
-                    </span>
-                  </div>
-                  <div className="absolute bottom-3 left-3 right-3 text-left text-white">
-                    <h4 className="font-serif font-bold text-sm leading-tight">Suite de Armonización & Spa</h4>
-                    <p className="text-[10px] text-white/75 mt-0.5">Tickets de $3,000 - $8,000 USD</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
