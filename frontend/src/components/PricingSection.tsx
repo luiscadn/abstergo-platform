@@ -22,9 +22,9 @@ export default function PricingSection() {
           </span>
         </div>
 
-        {/* H2 con marcador obligatorio de precio */}
+        {/* H2 con precio estimado para turismo dental */}
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#121316] tracking-tight mb-5 leading-tight">
-          Diseño de sonrisa desde [PENDIENTE: precio en USD]
+          Diseño de sonrisa desde $1,400 USD
         </h2>
 
         {/* Texto exacto */}

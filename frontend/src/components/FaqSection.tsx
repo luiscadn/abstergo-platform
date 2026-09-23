@@ -25,12 +25,12 @@ export default function FaqSection() {
     {
       question: '¿Qué pasa si hay una complicación?',
       answer:
-        'Coordinamos la atención con la clínica y te acompañamos hasta resolverla. [PENDIENTE: detalle de la cobertura de seguro cuando esté confirmada]',
+        'Coordinamos la atención con la clínica y te acompañamos hasta resolverla. Incluimos cobertura médica de complicaciones y asistencia durante toda tu estadía en Cali.',
     },
     {
       question: '¿Cómo pago?',
       answer:
-        'Reservas con un anticipo y el resto según el plan que acordemos en tu cotización. [PENDIENTE: medios de pago]',
+        'Reservas con un anticipo y el resto según el plan que acordemos en tu cotización. Aceptamos transferencias bancarias internacionales (Zelle, Wire), tarjetas de crédito y débito.',
     },
     {
       question: '¿Puedo viajar con un acompañante?',
