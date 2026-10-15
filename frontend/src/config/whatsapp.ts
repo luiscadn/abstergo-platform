@@ -1,8 +1,10 @@
 export const WHATSAPP_PHONE =
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573214230372';
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573154714343';
+
+export const WHATSAPP_DISPLAY = '+57 315 471 4343';
 
 export const PATIENT_WHATSAPP_MESSAGE =
-  'Hola, vengo de la página de Abstergo y quiero cotizar un tratamiento dental en Cali.';
+  'Hola, vengo de la página de Abstergo y quiero cotizar un tratamiento dental en el Valle del Cauca.';
 
 export const CLINIC_WHATSAPP_MESSAGE =
   'Hola, tengo una clínica y quiero conocer la alianza con Abstergo.';

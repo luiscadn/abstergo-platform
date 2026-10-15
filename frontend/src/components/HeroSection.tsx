@@ -33,18 +33,18 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAF9F6] border border-[#C5A880]/30 shadow-xs mb-6">
             <ShieldCheck className="w-4 h-4 text-[#0D9488]" />
             <span className="text-xs font-semibold tracking-wide text-[#1E2024]/90">
-              Coordinación integral de turismo dental en Cali
+              Turismo dental en Cali y el Valle del Cauca
             </span>
           </div>
 
           {/* Magnetic H1 */}
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-[62px] font-bold text-[#121316] tracking-tight leading-[1.14] mb-6">
-            Tu tratamiento dental en Cali, coordinado de principio a fin.
+            Tu tratamiento dental en el Valle del Cauca, coordinado de principio a fin.
           </h1>
 
           {/* Reassuring Subtitle */}
           <p className="font-sans text-base sm:text-lg md:text-xl text-[#1E2024]/80 max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10 font-normal">
-            Clínica verificada, hotel de recuperación, traslados y acompañamiento por WhatsApp. Un solo precio cerrado, y respondemos por ti si algo sale mal.
+            Clínica verificada, hospedaje, transporte y experiencias turísticas si quieres conocer la ciudad. Planes con precio cerrado, y respondemos por ti si algo sale mal.
           </p>
 
           {/* Action Buttons */}
@@ -63,10 +63,10 @@ export default function HeroSection() {
             </a>
 
             <a
-              href="#como-funciona"
+              href="#planes"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#FAF9F6] text-[#121316] font-medium text-sm sm:text-base border border-[#121316]/12 hover:border-[#121316]/30 hover:bg-[#F3EFEA] transition-all duration-300 touch-target-min"
             >
-              <span>Ver cómo funciona</span>
+              <span>Ver planes</span>
             </a>
           </div>
 

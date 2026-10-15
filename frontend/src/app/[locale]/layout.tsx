@@ -32,9 +32,9 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: 'Abstergo · Tu tratamiento dental en Cali, coordinado',
+  title: 'Abstergo · Tu tratamiento dental en el Valle del Cauca, coordinado',
   description:
-    'Clínica verificada, hotel de recuperación, traslados y acompañamiento por WhatsApp. Un solo precio cerrado, y respondemos por ti si algo sale mal.',
+    'Clínicas verificadas en Cali y Tuluá, hospedaje, transporte y experiencias turísticas. Planes con precio cerrado, y respondemos por ti si algo sale mal.',
   keywords: [
     'tratamiento dental cali',
     'diseño de sonrisa cali colombia',
@@ -42,13 +42,15 @@ export const metadata: Metadata = {
     'carillas dentales cali',
     'turismo dental cali colombia',
     'abstergo turismo medico',
-    'coordinacion dental cali'
+    'coordinacion dental cali',
+    'odontologia tulua',
+    'turismo dental valle del cauca'
   ],
   authors: [{ name: 'Abstergo' }],
   openGraph: {
-    title: 'Abstergo · Tu tratamiento dental en Cali, coordinado',
+    title: 'Abstergo · Tu tratamiento dental en el Valle del Cauca, coordinado',
     description:
-      'Clínica verificada, hotel de recuperación, traslados y acompañamiento por WhatsApp. Un solo precio cerrado, y respondemos por ti si algo sale mal.',
+      'Clínicas verificadas en Cali y Tuluá, hospedaje, transporte y experiencias turísticas. Planes con precio cerrado, y respondemos por ti si algo sale mal.',
     type: 'website',
     locale: 'es_CO',
     siteName: 'Abstergo',

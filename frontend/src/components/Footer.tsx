@@ -3,6 +3,7 @@
 import { useUtmTracking } from '@/hooks/useUtmTracking';
 import { handleWhatsAppCtaClick } from '@/lib/pixel';
 import AbstergoIcon from './AbstergoIcon';
+import { WHATSAPP_PHONE, WHATSAPP_DISPLAY } from '@/config/whatsapp';
 
 export default function Footer() {
   const { buildClinicWhatsAppUrl } = useUtmTracking();
@@ -20,7 +21,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center gap-3">
             <AbstergoIcon variant="light" className="w-8 h-8 drop-shadow-xs" />
             <p className="font-serif text-base sm:text-lg font-semibold tracking-wide text-[#FAF9F6]">
-              Abstergo · Coordinación de turismo médico · Cali, Colombia
+              Abstergo · Coordinación de turismo médico · Valle del Cauca, Colombia
             </p>
           </div>
 
@@ -42,7 +43,12 @@ export default function Footer() {
         {/* Bottom Rights Notice */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#FAF9F6]/50 text-center sm:text-left">
           <p>© {new Date().getFullYear()} Abstergo. Todos los derechos reservados.</p>
-          <p>Cali, Colombia</p>
+          <p>
+            Cali · Tuluá · Valle del Cauca ·{' '}
+            <a href={`https://wa.me/${WHATSAPP_PHONE}`} target="_blank" rel="noopener noreferrer" className="hover:text-[#C5A880] transition-colors">
+              WhatsApp {WHATSAPP_DISPLAY}
+            </a>
+          </p>
         </div>
       </div>
     </footer>

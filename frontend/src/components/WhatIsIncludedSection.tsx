@@ -74,7 +74,7 @@ export default function WhatIsIncludedSection() {
         <div className="max-w-3xl mx-auto p-5 sm:p-6 rounded-2xl bg-[#FDFCFB] border border-[#121316]/8 shadow-xs flex items-center gap-3 text-center sm:text-left justify-center">
           <PlusCircle className="w-5 h-5 text-[#C5A880] shrink-0" />
           <p className="text-sm sm:text-base text-[#1E2024]/80 font-normal">
-            Servicios opcionales: noches extra, acompañante y experiencias en Cali.
+            Servicios opcionales: noches extra, acompañante y <a href="#experiencias" className="font-semibold text-[#121316] underline underline-offset-4 decoration-[#C5A880] hover:text-[#C5A880] transition-colors">experiencias turísticas en Cali y el Valle</a>.
           </p>
         </div>
       </div>

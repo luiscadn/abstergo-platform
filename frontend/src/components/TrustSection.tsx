@@ -4,27 +4,33 @@ import ClinicCard from './ClinicCard';
 import { ShieldCheck, Star } from 'lucide-react';
 
 export default function TrustSection() {
+  const verificationLink = 'https://prestadores.minsalud.gov.co/habilitacion/';
+
   const clinics = [
     {
-      name: 'Clínica Odontológica Impladent',
-      city: 'Cali, Colombia (Sector Tequendama)',
-      specialty: 'Implantología & Rehabilitación Oral Avanzada',
-      registration: 'REPS Valle-7600104821',
-      verificationLink: '#verificacion',
+      name: 'Dra. Angie Bravo',
+      city: 'Cali, Colombia (Edif. El Nogal, Cons. 102)',
+      specialty: 'Estética Dental, Carillas & Odontología Integral',
+      registration: 'REPS Valle-7600183729',
+      verificationLink,
+      instagram: 'https://www.instagram.com/dra.angie_bravo/',
+      facebook: 'https://www.facebook.com/dra.angiebravo/',
     },
     {
       name: 'Centro Dental San Fernando',
       city: 'Cali, Colombia (San Fernando)',
       specialty: 'Diseño de Sonrisa & Estética Dental en Cerámica',
       registration: 'REPS Valle-7600105219',
-      verificationLink: '#verificacion',
+      verificationLink,
     },
     {
-      name: 'Instituto Odontológico Granada',
-      city: 'Cali, Colombia (Granada)',
-      specialty: 'Ortodoncia Invisible & Rehabilitación Integral',
-      registration: 'REPS Valle-7600103984',
-      verificationLink: '#verificacion',
+      name: 'Arias Dental Group',
+      city: 'Tuluá, Colombia (Cra. 25 # 31-49)',
+      specialty: 'Ortodoncia, Alineadores Invisibles & Estética Dental',
+      registration: 'REPS Valle-7600105382',
+      verificationLink,
+      instagram: 'https://www.instagram.com/ariasdentalgroup/',
+      facebook: 'https://www.facebook.com/AriasDentalGroup/',
     },
   ];
 

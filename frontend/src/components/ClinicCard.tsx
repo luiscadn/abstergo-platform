@@ -8,6 +8,8 @@ export interface ClinicCardProps {
   specialty: string;
   registration: string;
   verificationLink: string;
+  instagram?: string;
+  facebook?: string;
 }
 
 export default function ClinicCard({
@@ -16,7 +18,14 @@ export default function ClinicCard({
   specialty,
   registration,
   verificationLink,
+  instagram,
+  facebook,
 }: ClinicCardProps) {
+  const socials = [
+    { label: 'Instagram', href: instagram },
+    { label: 'Facebook', href: facebook },
+  ].filter((social): social is { label: string; href: string } => Boolean(social.href));
+
   return (
     <div className="p-6 sm:p-7 rounded-3xl bg-[#FAF9F6] border border-[#121316]/8 shadow-xs flex flex-col justify-between hover:border-[#C5A880]/50 transition-all duration-300">
       <div className="space-y-4">
@@ -55,8 +64,8 @@ export default function ClinicCard({
         </div>
       </div>
 
-      {/* Verification Link */}
-      <div className="mt-6 pt-4 border-t border-[#121316]/6">
+      {/* Verification Link & Socials */}
+      <div className="mt-6 pt-4 border-t border-[#121316]/6 flex flex-wrap items-center justify-between gap-3">
         <a
           href={verificationLink.startsWith('http') ? verificationLink : '#'}
           target={verificationLink.startsWith('http') ? '_blank' : undefined}
@@ -66,6 +75,22 @@ export default function ClinicCard({
           <span>Verificar habilitación oficial</span>
           <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
         </a>
+
+        {socials.length > 0 && (
+          <div className="flex items-center gap-2">
+            {socials.map((social) => (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] font-semibold text-[#0D9488] bg-[#0D9488]/10 hover:bg-[#0D9488]/20 px-2.5 py-1 rounded-full transition-colors"
+              >
+                {social.label}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -3,6 +3,9 @@ import HeroSection from '@/components/HeroSection';
 import ProblemSection from '@/components/ProblemSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import WhatIsIncludedSection from '@/components/WhatIsIncludedSection';
+import TreatmentsSection from '@/components/TreatmentsSection';
+import PlansSection from '@/components/PlansSection';
+import ExperiencesSection from '@/components/ExperiencesSection';
 import TrustSection from '@/components/TrustSection';
 import PricingSection from '@/components/PricingSection';
 import FaqSection from '@/components/FaqSection';
@@ -18,7 +21,10 @@ export default function HomePage() {
         <HeroSection />
         <ProblemSection />
         <HowItWorksSection />
+        <TreatmentsSection />
         <WhatIsIncludedSection />
+        <PlansSection />
+        <ExperiencesSection />
         <TrustSection />
         <PricingSection />
         <FaqSection />

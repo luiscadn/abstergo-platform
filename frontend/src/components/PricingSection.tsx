@@ -24,7 +24,7 @@ export default function PricingSection() {
 
         {/* H2 con precio estimado para turismo dental */}
         <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#121316] tracking-tight mb-5 leading-tight">
-          Diseño de sonrisa desde $1,400 USD
+          Diseño de sonrisa en cerámica desde $7,000 USD
         </h2>
 
         {/* Texto exacto */}

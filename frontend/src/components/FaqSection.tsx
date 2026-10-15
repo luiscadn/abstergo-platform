@@ -23,9 +23,24 @@ export default function FaqSection() {
         'Te mostramos su habilitación y los datos del profesional antes de que pagues cualquier anticipo.',
     },
     {
+      question: '¿Qué incluyen los planes?',
+      answer:
+        'Todos incluyen el tratamiento en una clínica aliada, hospedaje y transporte. Según el plan puedes sumar hotel superior, transporte privado durante toda la estadía, hospedaje para un acompañante y experiencias turísticas.',
+    },
+    {
+      question: '¿Puedo conocer la ciudad durante mi tratamiento?',
+      answer:
+        'Sí. Si lo deseas, organizamos experiencias turísticas en Cali y el Valle del Cauca (salsa, gastronomía, Lago Calima, Buga y más), siempre en los días que tu odontólogo recomiende para no afectar la recuperación.',
+    },
+    {
+      question: '¿En qué ciudades están las clínicas?',
+      answer:
+        'Trabajamos con clínicas aliadas en Cali y en Tuluá (Valle del Cauca). Si tu tratamiento es en Tuluá, coordinamos los traslados desde el aeropuerto y tu hospedaje en esa ciudad.',
+    },
+    {
       question: '¿Qué pasa si hay una complicación?',
       answer:
-        'Coordinamos la atención con la clínica y te acompañamos hasta resolverla. Incluimos cobertura médica de complicaciones y asistencia durante toda tu estadía en Cali.',
+        'Coordinamos la atención con la clínica y te acompañamos hasta resolverla. Incluimos cobertura médica de complicaciones y asistencia durante toda tu estadía en el Valle del Cauca.',
     },
     {
       question: '¿Cómo pago?',
